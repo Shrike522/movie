@@ -1,0 +1,30 @@
+{
+  "name": "movie",
+  "version": "1.0.0",
+  "description": "这是一个基于angular的小项目",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-webserver": "^0.9.1"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shrike522/movie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shrike522/movie/issues"
+  },
+  "homepage": "https://github.com/Shrike522/movie#readme"
+}

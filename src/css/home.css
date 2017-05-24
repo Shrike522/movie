@@ -1,0 +1,161 @@
+/* Create 2017-5 */
+/* 初始化 */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #3377aa;
+}
+a:hover {
+  color: #ffffff;
+  background: #3377aa;
+}
+body {
+  background: #FFFFFF;
+}
+p {
+  font-size: 12px;
+  color: #666666;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111111;
+  font-weight: normal;
+}
+/* head-bar  start */
+#header {
+  width: 100%;
+  background: #20232c;
+}
+#header #head-bar {
+  width: 980px;
+  line-height: 70px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#header #head-bar #head-bar-logo {
+  float: left;
+}
+#header #head-bar #head-bar-logo a {
+  font-size: 26px;
+  color: #37a;
+  font-weight: bold;
+}
+#header #head-bar #head-bar-logo a:hover {
+  text-decoration: none;
+  background: #20232c;
+}
+#header #head-bar #head-navbar {
+  float: left;
+  overflow: hidden;
+}
+#header #head-bar #head-navbar li {
+  float: left;
+  padding: 0 0 0 24px;
+}
+#header #head-bar #head-navbar li a {
+  font-size: 18px;
+  color: #bdbdbd;
+}
+#header #head-bar #head-navbar li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background: #20232c;
+}
+#header #head-bar #head-log {
+  float: right;
+  overflow: hidden;
+}
+#header #head-bar #head-log li {
+  float: left;
+  padding: 0 0 0 24px;
+}
+#header #head-bar #head-log li a {
+  font-size: 18px;
+  color: #bdbdbd;
+}
+#header #head-bar #head-log li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background: #20232c;
+}
+/* head-bar  end */
+/* footer  start */
+#footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+#footer div {
+  width: 980px;
+  line-height: 26px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#footer div span {
+  float: left;
+  font-size: 12px;
+  color: #999;
+}
+#footer div ul {
+  float: right;
+  overflow: hidden;
+}
+#footer div ul li {
+  float: left;
+  padding: 0 0 0 10px;
+}
+#footer div ul li a:hover {
+  text-decoration: underline;
+  color: #3377aa;
+  background: #FFF;
+}
+/* footer  end */
+/* 主页 */
+#home {
+  width: 100%;
+}
+#home #home-bar {
+  width: 980px;
+  margin: 0 auto;
+}
+#home #home-bar:after {
+  content: '';
+  display: block;
+  clear: both;
+}

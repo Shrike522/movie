@@ -1,0 +1,42 @@
+<div id="subject" ng-controller="subjectCtrl">
+	
+	<!-- 左侧主体内容 -->
+	<div id="movieInfo">
+		<!-- 电影标题 -->
+		<h2 ng-bind="movie.name"></h2>
+		<!-- 电影海报 简介 -->
+		<div class="info">
+			<div id="movieImg"><img ng-src="{{movie.url}}" alt="{{movie.alt}}" /></div>
+			<div id="movieText">
+				<p>导演:<span ng-bind="movie.director|getStr"></span></p>
+				<p>编剧:<span ng-bind="movie.screenwriter|getStr"></span></p>
+				<p>主演:<span ng-bind="movie.actor|getStr"></span></p>
+				<p>类型:<span ng-bind="movie.genres|getStr"></span></p>
+				<p>制片国家:<span ng-bind="movie.countries|getStr"></span></p>
+				<p>语言:<span ng-bind="movie.language|getStr"></span></p>
+				<p>上映日期:<span ng-bind="movie.year"></span></p>
+				<p>片长:<span ng-bind="movie.time"></span></p>
+			</div>
+			<p ng-bind="movie.summary" id="summary"></p>
+		</div>
+		<!-- 电影长评 -->
+		<div class="eva">
+			<h3>电影评论</h3>
+			<ul>
+				<li ng-repeat="viewer in assess">
+					<div>网友<a href="javascript:void(0);" ng-bind="viewer.people"></a>看过: </div>
+					<p ng-bind="viewer.text"></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- 右侧短评区域 -->
+	<div id="movieAssess">
+		<h3>您可能还喜欢...</h3>
+		<ul>
+			<li ng-repeat="seem in seemMovie"><span ng-bind="seem.number"></span><a href="javascript:void(0);" ng-bind="seem.name" ui-sref="index.subject({subjectId:seem.id})"></a></li>
+		</ul>
+	</div>
+
+</div>

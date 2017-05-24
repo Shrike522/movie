@@ -1,0 +1,152 @@
+
+//主面板宽度
+@sectionWidth:590px;
+
+//选电影 列表li长宽
+@liWidth:140px;
+@liHeight:270px;
+
+//侧边栏宽度
+@asideWidth:310px;
+
+//banner
+@bannerHeight:460px;
+
+/* 主页 */
+#home{
+	width: 100%;
+	#home-bar{
+		width: @contentWidth;
+		margin: 0 auto;
+		&:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		//banner轮播图(渐隐方式)
+		#banner{
+			position: relative;
+			ul{
+				overflow: hidden;
+				position: relative;
+				width: @contentWidth;
+				height: @bannerHeight;
+				li{
+					display: none;
+					position: absolute;
+					a{
+						display: block;
+						width: @contentWidth;
+						height: @bannerHeight;
+						img{
+							width: 100%;
+						}
+					}
+				}
+				li:first-child{
+					display: block;
+				}
+			}
+			ol{
+				overflow: hidden;
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+				li{
+					float: left;
+					width: 20px;
+					line-height: 20px;
+					border: 1px solid #FFF;
+					text-align: center;
+					margin-right: 20px;
+					background: #FFF;
+					a{
+						color: #999;
+					}
+					a:hover{
+						color: #FFF;
+					}
+				}
+				li:hover{
+					background: @hoverBackground;
+					color: #FFF;
+				}
+				li.active{
+					background: @hoverBackground;
+					a{
+						color: #FFF;
+					}
+				}
+			}
+		}
+		//主页内容
+		#section{
+			width: @sectionWidth;
+			float: left;
+			ol{
+				overflow: hidden;
+				margin-top: @marginContent;
+				li{
+					float: left;
+					padding: 0 10px;
+				}
+			}
+			ul{
+				overflow: hidden;
+				margin-top: @marginContent;
+				li{
+					float: left;
+					height: @liHeight;
+					margin-right: (@sectionWidth - @liWidth*4)/3;
+					a:nth-child(1){
+						display: block;
+						width: @liWidth;
+						height: 200px;
+						overflow: hidden;
+						img{
+							width: 100%;
+						}
+					}
+					a:nth-child(1):hover{
+						background: #FFF;
+					}
+					a:nth-child(2){
+						display: inline-block;
+						position: relative;
+						top: 4px;
+						width: @liWidth*0.6;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+				}
+				li:nth-child(4n){
+					margin-right: 0;
+				}
+			}
+		}
+		//侧边栏内容
+		#aside{
+			width: @asideWidth;
+			float: right;
+			ul{
+				margin-top: @marginContent;
+				li{
+					line-height: 38px;
+					border-bottom: 1px dotted #CCC;
+					span{
+						padding: 0 10px;
+						font-size: @wordSize;
+						color: @wordColor;
+						text-align: center;
+					}
+				}
+				li:last-child{
+					span{
+						padding: 0 10px 0 3px;
+					}
+				}
+			}
+		}
+	}
+}

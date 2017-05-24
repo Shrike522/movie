@@ -1,0 +1,12 @@
+
+<ul>
+	<li ng-repeat="item in images">
+		<a href="javascript:void(0);" ui-sref="index.subject({subjectId:item.id})">
+			<img ng-src="{{item.url}}" alt="" title="{{item.title}}" />
+		</a>
+	</li>
+</ul>
+<ol>
+	<li ng-repeat="item1 in images"><a href="javascript:void(0);" ng-bind="item1.number"></a></li>
+</ol>
+

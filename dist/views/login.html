@@ -1,0 +1,15 @@
+<form name="loginForm" id="loginForm" ng-controller="loginCtrl" ng-submit="submitForm()">
+	<div>
+		<label>用户名:</label>
+		<input type="text" name="username" ng-minlength="4" ng-maxlength="12" required ng-model="userData.username" />
+		<p class="error" ng-if="loginForm.username.$error.required && loginForm.username.$touched">用户名不能为空</p>
+	</div>
+	<div>
+		<label>密码:</label>
+		<input type="password" name="password" ng-minlength="6" ng-maxlength="32" required ng-model="userData.password" />
+		<p class="error" ng-if="loginForm.password.$error.required && loginForm.password.$touched"></p>
+	</div>
+	<div>
+		<input type="submit" value="登陆" />
+	</div>
+</form>

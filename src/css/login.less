@@ -1,0 +1,86 @@
+
+/* 表单样式 */
+
+@formPadding:20px;
+
+//每项input样式
+@labelSize:16px;
+@labelColor:#111;
+@labelWidth:70px;
+
+@inputSize:14px;
+@inputColor:#333;
+
+@errorSize:14px;
+@errorColor:#FF7575;
+
+
+form{
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	width: 400px;
+	padding: @formPadding;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	div{
+		overflow: hidden;
+		padding: 10px 0;
+		label{
+			float: left;
+			font-size: @labelSize;
+			color: @labelColor;
+			width: @labelWidth;
+			text-align: right;
+			line-height: 30px;
+		}
+		input{
+			float: right;
+			font-size: @inputSize;
+			color: @inputColor;
+			padding: 0 10px;
+			border: 1px solid #CCC;
+			border-radius: 3px;
+			line-height: 30px;
+			width: 280px;
+		}
+		p{
+			font-size: @wordSize;
+			color: @wordColor;
+			float: left;
+			position: relative;
+			left: @labelWidth + 30px;
+			width: 230px;
+		}
+		p.error{
+			color: @errorColor;
+		}
+
+	}
+	#checkText{
+		input{
+			float: left;
+			line-height: 20px;
+			width: 20px;
+			margin-left: @labelWidth + 30px;
+			position: relative;
+			top: 3px;
+		}
+		label{
+			text-align: left;
+			line-height: 20px;
+			width: 100px;
+		}
+	}
+	div:last-child{
+		input{
+			width: 380px;
+		}
+	}
+}
+

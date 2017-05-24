@@ -1,0 +1,150 @@
+
+/* 初始化 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin: 0; padding: 0;}
+ul,ol{list-style-type: none;}
+a{text-decoration: none; font-size: @hrefSize; color: @hrefColor;}
+a:hover{color: @hoverColor; background: @hoverBackground;}
+body{background: #FFFFFF;}
+p{font-size: @wordSize; color: @wordColor;}
+h1,h2,h3,h4,h5,h6{color: @titleColor; font-weight: normal;}
+span.grade{font-size: @evaSize; color: @evaColor;}
+h3{margin-top: @marginTop;}
+
+//公用变量
+//字体体裁
+@fontStyle:'Microsoft YaHei';
+
+//标题字体样式
+@titleSize:16px;
+@titleColor:#111111;
+
+//内容字体样式
+@wordSize:12px;
+@wordColor:#666;
+
+//链接字体样式
+@hrefSize:14px;
+@hrefColor:#37a;
+//hover
+@hoverColor:#FFF;
+@hoverBackground:#37a;
+
+//评分字体样式
+@evaSize:12px;
+@evaColor:#e09015;
+
+
+//head-bar样式
+@navSize:18px;
+@navColor:#bdbdbd;
+@navHover:#FFF;
+@navBackground:#20232c;
+
+//底部声明
+@footSize:12px;
+@footColor:#888888;
+
+//版心
+@contentWidth:980px;
+
+//标题顶部间隔
+@marginTop:30px;
+
+//内部区域间隔
+@marginContent:20px;
+
+
+
+/* head-bar  start */
+#header{
+	width: 100%;
+	background: @navBackground;
+	margin-bottom: 50px;
+	#head-bar{
+		width: @contentWidth;
+		line-height: 70px;
+		margin: 0 auto;
+		overflow: hidden;
+		#head-bar-logo{
+			float: left;
+			a{
+				font-size: 26px;
+				color: #37a;
+				font-weight: bold;
+			}
+			a:hover{
+				text-decoration: none;
+				background: @navBackground;
+			}
+		}
+		#head-navbar{
+			float: left;
+			overflow: hidden;
+			li{
+				float: left;
+				padding: 0 0 0 24px;
+				a{
+					font-size: @navSize;
+					color: @navColor;
+				}
+				a:hover{
+					color: @navHover;
+					text-decoration: none;
+					background: @navBackground;
+				}
+			}
+		}
+		#head-log{
+			float: right;
+			overflow: hidden;
+			li{
+				float: left;
+				padding: 0 0 0 24px;
+				a{
+					font-size: @navSize;
+					color: @navColor;
+				}
+				a:hover{
+					color: @navHover;
+					text-decoration: none;
+					background: @navBackground;
+				}
+			}
+		}
+	}
+}
+/* head-bar  end */
+
+
+/* footer  start */
+#footer{
+	width: 100%;
+	margin-top: 50px;
+	div{
+		width: @contentWidth;
+		line-height: 26px;
+		overflow: hidden;
+		margin: 0 auto;
+		span{
+			float: left;
+			font-size: 12px;
+			color: #999;
+		}
+		ul{
+			float: right;
+			overflow: hidden;
+			li{
+				float: left;
+				padding: 0 0 0 10px;
+				a:hover{
+					text-decoration: underline;
+					color: @hrefColor;
+					background: #FFF;
+				}
+			}
+		}
+	}
+}
+/* footer  end */
+
+@import "home.less";

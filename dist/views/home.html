@@ -1,0 +1,40 @@
+<!-- 首页内容 -->
+<div ng-controller="homeCtrl" id="home">
+	<div id="home-bar">
+
+		<div my-banner id="banner"></div>
+
+		<div id="section">
+			<h3>选电影</h3>
+			<ol id="movieType">
+				<li><a href="javascript:void(0)" ng-click="movieType('')">全部</a></li>
+				<li><a href="javascript:void(0)" ng-click="movieType('剧情')">剧情</a></li>
+				<li><a href="javascript:void(0)" ng-click="movieType('爱情')">爱情</a></li>
+				<li><a href="javascript:void(0)" ng-click="movieType('犯罪')">犯罪</a></li>
+				<li><a href="javascript:void(0)" ng-click="movieType('动作')">动作</a></li>
+				<li><a href="javascript:void(0)" ng-click="movieType('动画')">动画</a></li>
+				<li><a href="javascript:void(0)" ng-click="movieType('喜剧')">喜剧</a></li>
+				<li><a href="javascript:void(0)" ng-click="movieType('冒险')">冒险</a></li>
+				<li><a href="javascript:void(0)" ng-click="movieType('历史')">历史</a></li>
+				<li><a href="javascript:void(0)" ng-click="movieType('战争')">战争</a></li>
+				<li><a href="javascript:void(0)" ng-click="movieType('科幻')">科幻</a></li>
+				<li><a href="javascript:void(0)" ng-click="movieType('奇幻')">奇幻</a></li>
+			</ol>
+			<ul id="movieList">
+				<li ng-repeat="list in data|mtype:listType">
+					<a href="javascript:void(0);" ui-sref="index.subject({subjectId:list.id})"><img ng-src="{{list.url}}" alt="{{list.alt}}" /></a>
+					<a href="javascript:void(0);" ng-bind="list.name" ui-sref="index.subject({subjectId:list.id})"></a>
+					<span class="grade" ng-bind="list.grade"></span>
+				</li>
+			</ul>
+		</div>
+
+		<div id="aside">
+			<h3>电影排行榜</h3>
+			<ul>
+				<li ng-repeat="rank in ranks"><span ng-bind="rank.number"></span><a href="javascript:void(0);" ng-bind="rank.name" ui-sref="index.subject({subjectId:rank.id})"></a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>

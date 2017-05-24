@@ -1,0 +1,65 @@
+
+//电影信息样式
+@infoColor:#333;
+@infoMarginTop:20px;
+
+
+#subject{
+	width: @contentWidth;
+	overflow: hidden;
+	margin: 0 auto;
+	#movieInfo{
+		width: @sectionWidth;
+		float: left;
+		#movieImg{
+			width: 300px;
+			margin-top: @infoMarginTop;
+			img{
+				width: 100%;
+			}
+		}
+		#movieText{
+			margin-top: @infoMarginTop;
+		}
+		p{
+			color: @infoColor;
+		}
+		.eva{
+		    ul{
+		        width: @sectionWidth;
+		        li{
+		            padding: 20px 10px;
+		            border-bottom: 1px solid #CCC;
+		            margin-top: 10px;
+		            div{
+		                font-size: 12px;
+		                color: @infoColor;
+		                a{
+		                    margin: 0 3px;
+		                }
+		            }
+		            p{
+		                padding: 10px 0;
+		            }
+		        }
+		    }
+		}
+	}
+	#movieAssess{
+		width: @asideWidth;
+		float: right;
+		ul{
+			margin-top: @marginContent;
+			li{
+				line-height: 38px;
+				border-bottom: 1px dotted #CCC;
+				span{
+					padding: 0 10px;
+					font-size: @wordSize;
+					color: @wordColor;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

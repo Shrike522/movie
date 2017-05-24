@@ -1,0 +1,413 @@
+/* 初始化 全局样式 header,footer样式 */
+/* 初始化 */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #3377aa;
+}
+a:hover {
+  color: #ffffff;
+  background: #3377aa;
+}
+body {
+  background: #FFFFFF;
+}
+p {
+  font-size: 12px;
+  color: #666666;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111111;
+  font-weight: normal;
+}
+span.grade {
+  font-size: 12px;
+  color: #e09015;
+}
+h3 {
+  margin-top: 30px;
+}
+/* head-bar  start */
+#header {
+  width: 100%;
+  background: #20232c;
+  margin-bottom: 50px;
+}
+#header #head-bar {
+  width: 980px;
+  line-height: 70px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#header #head-bar #head-bar-logo {
+  float: left;
+}
+#header #head-bar #head-bar-logo a {
+  font-size: 26px;
+  color: #37a;
+  font-weight: bold;
+}
+#header #head-bar #head-bar-logo a:hover {
+  text-decoration: none;
+  background: #20232c;
+}
+#header #head-bar #head-navbar {
+  float: left;
+  overflow: hidden;
+}
+#header #head-bar #head-navbar li {
+  float: left;
+  padding: 0 0 0 24px;
+}
+#header #head-bar #head-navbar li a {
+  font-size: 18px;
+  color: #bdbdbd;
+}
+#header #head-bar #head-navbar li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background: #20232c;
+}
+#header #head-bar #head-log {
+  float: right;
+  overflow: hidden;
+}
+#header #head-bar #head-log li {
+  float: left;
+  padding: 0 0 0 24px;
+}
+#header #head-bar #head-log li a {
+  font-size: 18px;
+  color: #bdbdbd;
+}
+#header #head-bar #head-log li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background: #20232c;
+}
+/* head-bar  end */
+/* footer  start */
+#footer {
+  width: 100%;
+  margin-top: 50px;
+}
+#footer div {
+  width: 980px;
+  line-height: 26px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#footer div span {
+  float: left;
+  font-size: 12px;
+  color: #999;
+}
+#footer div ul {
+  float: right;
+  overflow: hidden;
+}
+#footer div ul li {
+  float: left;
+  padding: 0 0 0 10px;
+}
+#footer div ul li a:hover {
+  text-decoration: underline;
+  color: #3377aa;
+  background: #FFF;
+}
+/* footer  end */
+/* 主页 */
+#home {
+  width: 100%;
+}
+#home #home-bar {
+  width: 980px;
+  margin: 0 auto;
+}
+#home #home-bar:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#home #home-bar #banner {
+  position: relative;
+}
+#home #home-bar #banner ul {
+  overflow: hidden;
+  position: relative;
+  width: 980px;
+  height: 460px;
+}
+#home #home-bar #banner ul li {
+  display: none;
+  position: absolute;
+}
+#home #home-bar #banner ul li a {
+  display: block;
+  width: 980px;
+  height: 460px;
+}
+#home #home-bar #banner ul li a img {
+  width: 100%;
+}
+#home #home-bar #banner ul li:first-child {
+  display: block;
+}
+#home #home-bar #banner ol {
+  overflow: hidden;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+#home #home-bar #banner ol li {
+  float: left;
+  width: 20px;
+  line-height: 20px;
+  border: 1px solid #FFF;
+  text-align: center;
+  margin-right: 20px;
+  background: #FFF;
+}
+#home #home-bar #banner ol li a {
+  color: #999;
+}
+#home #home-bar #banner ol li a:hover {
+  color: #FFF;
+}
+#home #home-bar #banner ol li:hover {
+  background: #3377aa;
+  color: #FFF;
+}
+#home #home-bar #banner ol li.active {
+  background: #3377aa;
+}
+#home #home-bar #banner ol li.active a {
+  color: #FFF;
+}
+#home #home-bar #section {
+  width: 590px;
+  float: left;
+}
+#home #home-bar #section ol {
+  overflow: hidden;
+  margin-top: 20px;
+}
+#home #home-bar #section ol li {
+  float: left;
+  padding: 0 10px;
+}
+#home #home-bar #section ul {
+  overflow: hidden;
+  margin-top: 20px;
+}
+#home #home-bar #section ul li {
+  float: left;
+  height: 270px;
+  margin-right: 10px;
+}
+#home #home-bar #section ul li a:nth-child(1) {
+  display: block;
+  width: 140px;
+  height: 200px;
+  overflow: hidden;
+}
+#home #home-bar #section ul li a:nth-child(1) img {
+  width: 100%;
+}
+#home #home-bar #section ul li a:nth-child(1):hover {
+  background: #FFF;
+}
+#home #home-bar #section ul li a:nth-child(2) {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  width: 84px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#home #home-bar #section ul li:nth-child(4n) {
+  margin-right: 0;
+}
+#home #home-bar #aside {
+  width: 310px;
+  float: right;
+}
+#home #home-bar #aside ul {
+  margin-top: 20px;
+}
+#home #home-bar #aside ul li {
+  line-height: 38px;
+  border-bottom: 1px dotted #CCC;
+}
+#home #home-bar #aside ul li span {
+  padding: 0 10px;
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+}
+#home #home-bar #aside ul li:last-child span {
+  padding: 0 10px 0 3px;
+}
+/* 主页样式 */
+/* 详情页样式 */
+#subject {
+  width: 980px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#subject #movieInfo {
+  width: 590px;
+  float: left;
+}
+#subject #movieInfo #movieImg {
+  width: 300px;
+  margin-top: 20px;
+}
+#subject #movieInfo #movieImg img {
+  width: 100%;
+}
+#subject #movieInfo #movieText {
+  margin-top: 20px;
+}
+#subject #movieInfo p {
+  color: #333333;
+}
+#subject #movieInfo .eva ul {
+  width: 590px;
+}
+#subject #movieInfo .eva ul li {
+  padding: 20px 10px;
+  border-bottom: 1px solid #CCC;
+  margin-top: 10px;
+}
+#subject #movieInfo .eva ul li div {
+  font-size: 12px;
+  color: #333333;
+}
+#subject #movieInfo .eva ul li div a {
+  margin: 0 3px;
+}
+#subject #movieInfo .eva ul li p {
+  padding: 10px 0;
+}
+#subject #movieAssess {
+  width: 310px;
+  float: right;
+}
+#subject #movieAssess ul {
+  margin-top: 20px;
+}
+#subject #movieAssess ul li {
+  line-height: 38px;
+  border-bottom: 1px dotted #CCC;
+}
+#subject #movieAssess ul li span {
+  padding: 0 10px;
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+}
+/* 表单样式 */
+/* 表单样式 */
+form {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  width: 400px;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+form div {
+  overflow: hidden;
+  padding: 10px 0;
+}
+form div label {
+  float: left;
+  font-size: 16px;
+  color: #111111;
+  width: 70px;
+  text-align: right;
+  line-height: 30px;
+}
+form div input {
+  float: right;
+  font-size: 14px;
+  color: #333333;
+  padding: 0 10px;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  line-height: 30px;
+  width: 280px;
+}
+form div p {
+  font-size: 12px;
+  color: #666666;
+  float: left;
+  position: relative;
+  left: 100px;
+  width: 230px;
+}
+form div p.error {
+  color: #ff7575;
+}
+form #checkText input {
+  float: left;
+  line-height: 20px;
+  width: 20px;
+  margin-left: 100px;
+  position: relative;
+  top: 3px;
+}
+form #checkText label {
+  text-align: left;
+  line-height: 20px;
+  width: 100px;
+}
+form div:last-child input {
+  width: 380px;
+}
